@@ -13,17 +13,13 @@ a = x % 10;
 x /= 10;
 b = x % 10;
 c = x / 10;
-if (k == false) {
-if ((a == b) || (a == c) || (b == c)) {
+while ((a == b) || (a == c) || (b == c)) {
 cout <<"Цифры в числе не могут повторяться" << endl;
 cin >> x;
 a = x % 10;
 x /= 10;
 b = x % 10;
 c = x / 10;
-}
-else
-k = true;
 }
 cout << a << b << c << endl;
 cout << a << c << b << endl;
