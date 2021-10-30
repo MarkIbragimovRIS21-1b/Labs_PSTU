@@ -4,7 +4,7 @@ using namespace std;
 int main()
 {
 int a = 0, b = 0, c = 0, x = 0;
-bool F = false;
+bool k = false;
 cout << "Введите трёхзначное число: ";
 cin >> x;
 while ((x < 100) || (x > 999))
@@ -13,7 +13,7 @@ a = x % 10;
 x /= 10;
 b = x % 10;
 c = x / 10;
-if (F == false) {
+if (k == false) {
 if ((a == b) || (a == c) || (b == c)) {
 cout <<"Цифры в числе не могут повторяться" << endl;
 cin >> x;
@@ -23,7 +23,7 @@ b = x % 10
 c = x / 10;
 }
 else
-F = true;
+k = true;
 }
 cout << a << b << c << endl;
 cout << a << c << b << endl;
