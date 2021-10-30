@@ -19,7 +19,7 @@ cout <<"Цифры в числе не могут повторяться" << endl
 cin >> x;
 a = x % 10;
 x /= 10;
-b = x % 10
+b = x % 10;
 c = x / 10;
 }
 else
@@ -31,7 +31,7 @@ cout << b << a << c << endl;
 cout << b << c << a << endl;
 cout << c << b << a << endl;
 cout << c << a << b << endl;
-сout << "Самое большое число: ";
+cout << "Самое большое число: ";
 if ((a > c) && (a > b))
 cout << a << fmax(b, c) << fmin(b, c);
 if ((b > c) && (b > a))
